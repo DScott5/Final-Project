@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="final-project-style.css">
+</head>
+<body>
+	<ul class="test">
+<li><a href="#CZ">Coke Zero Sugar</a></li>
+<li><a href="#SP">Snapple Fruit Punch</a></li>
+<li><a href="#BB">Strawberry Bubly</a></li>
+<li><a href="#VW">Vitamin Water Breeze-E</a></li>
+<li><a href="#CD">Canada Dry Lemonade</a></li>
+<li><a href="#End">Overall Thoughts</a></li>
+		<li>
+	</ul>
+<h1 class="coke-zero-title" id="CZ"><u>Coke Zero Sugar</u></h1>
+<img class="coke-image" src="https://github.com/DScott5/Final-Project/blob/master/IMG/CokeZeroSugar.jpg?raw=true">
+<p class="coke-desc">Coke has done a phenomenal job improving the taste of Coke Zero,<br>
+making it much more palatable. The harsh zero calorie taste from the original formula<br>
+has been completely removed, giving a much more crisp finish. This new forumla helps<br>
+give the feeling of drinking regular coke while still containing zero calories.<br>
+<u>Rating: 8/10</u></p>
+<h1 class="snapple-title" id="SP"><u>Snapple Fruit Punch</u></h1>
+<img class="snapple-image" src="https://github.com/DScott5/Final-Project/blob/master/IMG/SnappleFruitPunch.jpg?raw=true">
+<p class="snapple-desc">Snapple has brought us an interesting take on the classic beverage.<br>
+Surprisingly this was very good, and never felt too sweet because it's not<br>
+sweetened with corn syrup, just regular old sugar.<br>
+<u>Rating: 5/10</u></p>
+<h1 class="bubly-title" id="BB"><u>Strawberry Bubly</u></h1>
+<img class="bubly-image" src="https://github.com/DScott5/Final-Project/blob/master/IMG/StrawberryBubly.jpg?raw=true">
+<p class="bubly-desc">I'm interested to see what this new brand of seltzer has to offer since<br>
+I'm quite the seltzer connoisseur. This particular flavor has a very fresh from the field<br>
+strawberry taste that I've never tasted in carbonated form which was very impressive.<br>
+<u>Rating: 6/10</u></p>
+<h1 class="vitamin-title" id="VW"><u>Vitamin Water Breeze-E</u></h1>
+<img class="vitamin-image" src="https://github.com/DScott5/Final-Project/blob/master/IMG/VitaminWaterBreeze-E.jpg?raw=true">
+<p class="vitamin-desc">This beverage was a real doozy for me. I could hardly taste the
+watermelon<br>and had a tough time picking out the strawberry. It's like it wasn't even there
+to begin with.<br>
+<u>Rating: 3/10</u></p>
+<h1 class="canada-title" id="CD"><u>Canada Dry Lemonade</u></h1>
+<img class="canada-image" src="https://github.com/DScott5/Final-Project/blob/master/IMG/CanadaDryLemonade.jpg?raw=true">
+<p class="canada-desc">Canada Dry Lemonade is a very ambitious take on the ginger ale.<br>
+It's quite good but the ginger ale slightly overpowers the lemonade<br>making you have to really
+hunt for the flavor while you sip it.<br>
+<u>Rating: 7/10</u></p>
+
+<button class="collapsible" id="End">Overall thoughts</button>
+<div class="content">
+<p>Overall Coke Zero Sugar blew all these drinks out of the water for me. It was the first drink
+I tried out of the bunch and the revision to the formula was very much needed in my eyes.<br><br>
+The weakest drink for me was the Vitamin Water Breeze-e because the taste was very faint
+and hardly even there.
+</p>
+</div>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+	coll[i].addEventListener("click", function() {
+		this.classList.toggle("active");
+		var content = this.nextElementSibling;
+		if (content.style.display === "block") {
+			content.style.display = "none";
+		} else {
+			content.style.display = "block";
+		}
+	});
+}
+</script>
+
+</body>
+</html>
